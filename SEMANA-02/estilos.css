@@ -1,0 +1,84 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-weight: 600;
+    padding: 10px;
+}
+
+nav a:hover{
+    color: burlywood
+}
+
+.mensaje{
+    display: flex;
+    justify-content: center;
+}
+
+.seccionIzq{
+    float:left;
+    padding: 10px;
+}
+
+.seccionDer{
+    padding: 10px;
+}
+
+.adornos{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.imgAdo{
+    height: 150px;
+    width: 150px;
+}
+
+.pieIzq{
+    float:left;
+    padding: 10px;
+}
+
+.pieDer{
+    padding: 10px;
+}
+
+.pago{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pedido{
+    padding-right: 50px;
+}
+
+.pasSec{
+    display: flex;
+}
+
+.pasDer{
+    padding-left: 100px;
+}
+
+.pasImgDis{
+    width: 400px;
+    background-image: conic-gradient()
+}
