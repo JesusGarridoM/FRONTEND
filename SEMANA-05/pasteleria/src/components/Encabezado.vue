@@ -1,0 +1,41 @@
+<template>
+<div class="encabezado">
+    <div>
+        <router-link to="/cliente"><img src="../assets/logo.png" alt=""></router-link>
+    </div>
+    <nav>
+        <!-- <router-link  class="navChild" to="/cliente">Agregar</router-link> -->
+        <!-- <router-link  class="navChild" to="/cliente/pago" @click="$store.commit('enviarOrden')">Carrito</router-link> -->
+        <router-link  class="navChild" to="/cliente/pago" @click="$store.dispatch('actualizarPedido')">Pagar</router-link>
+        <router-link  class="navChild" to="/cliente">Ingresar</router-link>
+    </nav>
+    <router-view/>
+</div>
+</template>
+
+
+<script>
+export default {
+  name: 'Encabezado'
+}
+</script>
+
+<style scoped>
+.encabezado{
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.navChild{
+    padding: 22px 55px;
+    background-color: rgba(0, 0, 0, 0.20);
+    font-weight: 700;
+    font-size: 23px;
+    color: #DEB887;
+    text-transform: uppercase;
+}
+.navChild:hover{
+    color: white;
+}
+</style>

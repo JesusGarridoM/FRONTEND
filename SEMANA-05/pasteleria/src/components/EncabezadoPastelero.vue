@@ -1,0 +1,31 @@
+<template>
+<div class="encabezado">
+    <div>
+        <router-link to="/cliente"><img src="../assets/logo.png" alt=""></router-link>
+    </div>
+    <nav>
+        <router-link  class="navChild" to="/pastelero">Cerrar sesion</router-link>
+    </nav>
+</div>
+</template>
+
+
+<style scoped>
+.encabezado{
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.navChild{
+    padding: 22px 55px;
+    background-color: rgba(0, 0, 0, 0.20);
+    font-weight: 700;
+    font-size: 23px;
+    color: #DEB887;
+    text-transform: uppercase;
+}
+.navChild:hover{
+    color: white;
+}
+</style>
