@@ -76,4 +76,17 @@ ul{
     height: 20px;
     width: 20px;
 }
+@media screen and (max-width: 1000px){
+    .adornos{
+        flex: 1 1 100%;
+        /* flex-wrap: wrap; */
+    }    
+    ul{
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 80px;
+    }
+}
 </style>

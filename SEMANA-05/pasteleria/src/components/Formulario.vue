@@ -66,4 +66,28 @@ input[type=submit]{
 .dato{
     text-align: left;
 }
+@media screen and (max-width: 1300px){
+    label{
+        flex: 1 1 30%;
+    }
+    input{
+        flex: 1 1 70%;
+    }
+    .seccion{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 100%;
+    }  
+    .seccion div{
+        margin: 0px;
+        display: flex;
+    }
+}
+@media screen and (max-width: 600px){
+    .dato{
+        flex-direction: column;
+    }
+
+}
 </style>

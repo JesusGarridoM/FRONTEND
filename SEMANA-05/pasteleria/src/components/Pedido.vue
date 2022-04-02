@@ -75,5 +75,18 @@ export default {
     text-transform: uppercase;
     justify-content: space-between;
 }
+@media screen and (max-width: 1300px){
+    .seccion{
+        width: auto;
+    }  
+    .principal{
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 100%;
+    }  
+    .datos{
+        width: auto;
+    }
+}
 
 </style>

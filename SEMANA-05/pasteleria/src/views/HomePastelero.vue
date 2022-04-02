@@ -32,4 +32,9 @@ export default {
 .graficas{
   display: flex;
 }
+@media screen and (max-width: 600px){
+    .graficas{
+        flex-direction: column;
+    }    
+}
 </style>

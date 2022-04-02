@@ -38,4 +38,13 @@
 
     color: #FFFFFF;
 }
+@media screen and (max-width: 1000px){
+    .pie{
+        display: flex;
+        flex-direction: column;
+    }
+    .pie div{
+        flex: 1 1 100%;
+    }    
+}
 </style>

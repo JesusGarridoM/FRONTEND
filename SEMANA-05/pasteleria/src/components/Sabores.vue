@@ -5,8 +5,6 @@
     </div>
     <ul class="sabBot">
         <li class="sabor" v-for="item in $store.getters.funSabores" :key="item.id">
-            <!-- <input class="casilla" type="checkbox" v-bind:id="item.nombre" v-bind:value="item.nombre" v-model="toggle">
-            <label class="saborNom" v-bind:for="item.nombre">{{item.nombre}}</label> -->
             <input class="casilla" type="checkbox" v-bind:id="item.nombre" v-bind:value="item.nombre" v-model="$store.state.orden.sabor">
             <label class="saborNom" v-bind:for="item.nombre">{{item.nombre}}</label>
             <p>${{item.precio}}</p>
@@ -56,5 +54,15 @@ export default {
 .saborNom{
     width: 280px;
     text-align: left;
+}
+@media screen and (max-width: 1000px){
+    .sabores{
+        flex: 1 1 100%;
+        /* flex-wrap: wrap; */
+    }    
+    .sabor{
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
 </style>

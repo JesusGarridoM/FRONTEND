@@ -4,8 +4,6 @@
         <router-link to="/cliente"><img src="../assets/logo.png" alt=""></router-link>
     </div>
     <nav>
-        <!-- <router-link  class="navChild" to="/cliente">Agregar</router-link> -->
-        <!-- <router-link  class="navChild" to="/cliente/pago" @click="$store.commit('enviarOrden')">Carrito</router-link> -->
         <router-link  class="navChild" to="/cliente/pago" @click="$store.dispatch('actualizarPedido')">Pagar</router-link>
         <router-link  class="navChild" to="/cliente">Ingresar</router-link>
     </nav>
@@ -26,6 +24,7 @@ export default {
     padding: 30px 80px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .navChild{
     padding: 22px 55px;
@@ -37,5 +36,21 @@ export default {
 }
 .navChild:hover{
     color: white;
+}
+@media screen and (max-width: 1000px){
+    nav{
+        width: 100%;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .encabezado{
+        flex-direction: column;
+        padding: 0px;  
+    }    
+    .navChild{
+        flex: 1;
+    }
 }
 </style>

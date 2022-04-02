@@ -16,6 +16,7 @@
     padding: 30px 80px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .navChild{
     padding: 22px 55px;
@@ -27,5 +28,21 @@
 }
 .navChild:hover{
     color: white;
+}
+@media screen and (max-width: 1000px){
+    nav{
+        width: 100%;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .encabezado{
+        flex-direction: column;
+        padding: 0px;  
+    }    
+    .navChild{
+        flex: 1;
+    }
 }
 </style>

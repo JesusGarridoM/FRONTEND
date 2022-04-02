@@ -1,8 +1,10 @@
 <template>
 <ul class="seccion">
     <li class="sabor" v-for="item in $store.getters.funSabores" :key="item.id">
-        <p class="nombre">{{item.nombre}}</p>
-        <p>{{item.stock}}</p>
+        <div>
+            <p class="nombre">{{item.nombre}}</p>
+            <p>{{item.stock}}</p>
+        </div>
         <div class="barCom"><div class="barVal" v-bind:style="{width:item.porcen}"></div></div>
     </li>
 </ul>
@@ -48,10 +50,9 @@ export default {
 
 <style scoped>
 p{
-    margin: 0;
+    text-align: left;
 }
 .seccion{
-    width: 50%;
     background: rgba(0, 0, 0, 0.3);
     border-top: 1px solid white;
     margin: 0px;
@@ -63,25 +64,28 @@ p{
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 50%;
 }
 .sabor{
     padding: 12px 24px;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.sabor div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 .nombre{
     width: 154px;
-    text-align: left;
-}
-.barCom{
-    width: 408px;
-    height: 37px;
 }
 .barVal{
     width: 100%;
-    height: 37px;
+    height: 44px;
     background: linear-gradient(89.95deg, #149086 19.14%, rgba(180, 87, 127, 0.64) 97.1%);
 }
 </style>

@@ -10,6 +10,12 @@
 body{
   margin: 0;
   background-image: url(./assets/fondo.png);
+  background-size: cover;
+  background-position: center;
+  /* height: 100vh; */
+  /* background-repeat: no-repeat;*/
+  background-attachment: fixed; 
+
 }
 h2{
     display: inline;

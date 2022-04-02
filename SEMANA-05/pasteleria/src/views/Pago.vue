@@ -37,4 +37,10 @@ export default {
   /* width: 100%; */
   display: flex;
 }
+@media screen and (max-width: 1300px){
+    .principal{
+        padding: 0px;  
+        flex-direction: column-reverse;
+    }    
+}
 </style>

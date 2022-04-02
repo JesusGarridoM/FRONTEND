@@ -1,8 +1,10 @@
 <template>
 <ul class="seccion">
     <li class="adorno" v-for="item in $store.getters.funAdornos" :key="item.id">
-        <p class="nombre">{{item.nombre}}</p>
-        <p>{{item.stock}}</p>
+        <div>
+            <p class="nombre">{{item.nombre}}</p>
+            <p>{{item.stock}}</p>
+        </div>
         <div class="barCom"><div class="barVal" v-bind:style="{width:item.porcen}"></div></div>
     </li>
 </ul>
@@ -37,10 +39,9 @@
 
 <style scoped>
 p{
-    margin: 0;
+    text-align: left;
 }
 .seccion{
-    width: 50%;
     background: rgba(0, 0, 0, 0.3);
     border-top: 1px solid white;
     margin: 0px;
@@ -53,21 +54,23 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex: 1 1 50%;
 }
 .adorno{
     padding: 12px 24px;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.adorno div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 .nombre{
     width: 154px;
-    text-align: left;
-}
-.barCom{
-    width: 408px;
-    height: 44px;
 }
 .barVal{
     width: 100%;
