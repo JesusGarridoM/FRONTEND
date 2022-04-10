@@ -95,6 +95,7 @@ const funTypes=(rTypes)=>{
         document.getElementById(`type0${i+1}`).src = `./assets/${name}.png`;
         document.getElementById(`type0${i+1}`).alt = `${name} icon`;
         document.getElementById(`type0${i+1}`).style.visibility="visible";
+        document.getElementById(`divType0${i+1}`).style.position="relative";
         
         document.getElementById(`typeText0${i+1}`).innerHTML=`${name.toUpperCase()}`;
         document.getElementById(`typeText0${i+1}`).style.display="inline"
@@ -103,6 +104,7 @@ const funTypes=(rTypes)=>{
     for (let i = rTypes.length; i <5; i++) {
         document.getElementById(`type0${i+1}`).style.visibility="hidden";
         document.getElementById(`typeText0${i+1}`).style.display="none";
+        document.getElementById(`divType0${i+1}`).style.position="absolute";
     }
 }
 const funAbilities=(rAbilities)=>{

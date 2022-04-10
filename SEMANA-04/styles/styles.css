@@ -6,7 +6,9 @@ body{
     background: radial-gradient(23.4% 35.69% at 25.49% 59.86%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.174) 82.29%), 
      linear-gradient(0deg, rgba(51, 0, 255, 0.488) 0%, rgba(175, 175, 175, 0.464) 64.58%, rgba(255, 0, 61, 0.8) 100%), 
      linear-gradient(90deg, rgba(36, 0, 255, 0) 0%, rgba(133, 133, 133, 0.416667) 47.92%, rgba(255, 0, 0, 0.8) 100%);
-
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
 }
 h1{
     font-family: 'Segoe UI';
@@ -71,7 +73,6 @@ button:active{
 }
 .wid01{
     visibility: hidden;
-
     display: flex;
 }
 .wid02{
@@ -127,16 +128,16 @@ button:active{
 }
 .blo08{
     padding: 10px 20px;
-    margin-right: 80px;
+    width: 80%;
     background: rgba(0, 0, 0, 0.15);
     border-radius: 20px;
     column-gap: 50px;
+    justify-content: left;
 }
 .blo09{
     gap: 50px;
 }
 .blo10{
-    padding: 5px 100px 5px 10px;
     display: flex;
     gap: 10px;
 
@@ -156,11 +157,11 @@ button:active{
 .blo13{
     display: flex;
     gap: 9px;
-    width: 100%;
+    flex: 1;
 }
 .blo14{
     padding: 5px 20px 20px 20px;
-    margin-right: 80px;
+    width: 80%;
     background: rgba(0, 0, 0, 0.15);
     border-radius: 20px;
     gap: 10px;
@@ -223,19 +224,56 @@ button:active{
     visibility:visible;
 }
 .icon{
-    position: relative;
+    position: absolute;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1200px) {
+    .blo11{
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px;
+        margin-bottom: 20px;
+
+        gap: 20px;
+        align-items: center;
+    }
+    /* header a{
+        display: flex;
+        justify-content: center ;
+    } */
     .wid01{
         flex-direction: column;
     }
     .wid02{
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+    }
+    .blo04{
+        width: auto;
+        padding: 0px;
+        margin: 0px;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 480px) {
+    .blo03{
+        width: auto;
+        flex: 1 1 70%;
+    }
+    .blo08{
+        width: auto;
+    }
+    .blo14{
+        width: 300px;
+    }
+    .blo13{
+        flex: 0 0 100px;
     }
 }
 
-@media screen and (max-width: 1100px) {
+/* @media screen and (max-width: 1100px) {
     .blo11{
         flex-direction: column;
         justify-content: center;
@@ -246,4 +284,4 @@ button:active{
         display: flex;
         justify-content: center ;
     }
-}
+} */
