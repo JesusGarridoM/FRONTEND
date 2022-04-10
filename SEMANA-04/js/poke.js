@@ -6,7 +6,7 @@ const fetchPokemon = () => {
 
     fetch(url).then((res) => {
         if (res.status != "200") {
-            pokeImage("../assets/pokeball.png")
+            pokeImage("./assets/pokeball.png")
         }
         else {
             return res.json();
@@ -92,7 +92,7 @@ const funStats=(rStats)=>{
 const funTypes=(rTypes)=>{
     for (let i = 0; i < rTypes.length; i++) {
         let name=rTypes[i].type.name.toLowerCase();
-        document.getElementById(`type0${i+1}`).src = `../assets\\${name}.png`;
+        document.getElementById(`type0${i+1}`).src = `./assets/${name}.png`;
         document.getElementById(`type0${i+1}`).alt = `${name} icon`;
         document.getElementById(`type0${i+1}`).style.visibility="visible";
         
