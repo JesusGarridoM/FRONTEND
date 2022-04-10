@@ -7,20 +7,26 @@ Se pueden realizar pedidos con diferentes combinaciones de sabores y adornos, el
 
 ## Visuales
 ### Vista escritorio
-![Pagina de rutas](src/assets/visual/escritorio/rutas.png)
-![Pagina de inicio de cliente](src/assets/visual/escritorio/homeCliente01.png)
-![Pagina de inicio de cliente](src/assets/visual/escritorio/homeCliente02.png)
-![Pagina de pago](src/assets/visual/escritorio/pago01.png)
-![Pagina de pago](src/assets/visual/escritorio/pago02.png)
-![Pagina de pastelero](src/assets/visual/escritorio/pastelero01.png)
-![Pagina de pastelero](src/assets/visual/escritorio/pastelero02.png)
+<div>
+  <img alt="Pagina de rutas" src="src/assets/visual/escritorio/rutas.png" width="300px" />
+  <img alt="Pagina de inicio de cliente" src="src/assets/visual/escritorio/homeCliente01.png" width="300px" />
+  <img alt="Pagina de inicio de cliente" src="src/assets/visual/escritorio/homeCliente02.png" width="300px" />
+  <img alt="Pagina de pago" src="src/assets/visual/escritorio/pago01.png" width="300px" />
+  <img alt="Pagina de pago" src="src/assets/visual/escritorio/pago02.png" width="300px" />
+  <img alt="Pagina de pastelero" src="src/assets/visual/escritorio/pastelero01.png" width="300px" />
+  <img alt="Pagina de pastelero" src="src/assets/visual/escritorio/pastelero02.png" width="300px" />
+</div>
+
 ### Vista celular (responsive)
-![Pagina de rutas](src/assets/visual/celular/rutas.jpg)
-![Pagina de inicio de cliente](src/assets/visual/celular/homeCliente01.jpg)
-![Pagina de inicio de cliente](src/assets/visual/celular/homeCliente02.jpg)
-![Pagina de inicio de cliente](src/assets/visual/celular/homeCliente03.jpg)
-![Pagina de pastelero](src/assets/visual/celular/pastelero01.jpg)
-![Pagina de pastelero](src/assets/visual/celular/pastelero02.jpg)
+<div>
+  <img alt="Pagina de rutas" src="src/assets/visual/celular/rutas.jpg" height="300px" />
+  <img alt="Pagina de inicio de cliente" src="src/assets/visual/celular/homeCliente01.jpg" height="300px" />
+  <img alt="Pagina de inicio de cliente" src="src/assets/visual/celular/homeCliente02.jpg" height="300px" />
+  <img alt="Pagina de inicio de cliente" src="src/assets/visual/celular/homeCliente03.jpg" height="300px" />
+  <img alt="Pagina de pastelero" src="src/assets/visual/celular/pastelero01.jpg" height="300px" />
+  <img alt="Pagina de pastelero" src="src/assets/visual/celular/pastelero02.jpg" height="300px" />
+</div>
+
 
 ## Instalación
 ```
