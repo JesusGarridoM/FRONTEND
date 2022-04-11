@@ -9,7 +9,7 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed; 
-    min-width: 500px;
+    /* min-width: 500px; */
 }
 h1{
     font-family: 'Segoe UI';
@@ -87,7 +87,6 @@ button:active{
 }
 .blo01{
     background: rgba(0, 0, 0, 0.15);
-    width: 347px;
     border: none;
     padding: 5px 10px 5px 10px;
 
@@ -98,6 +97,7 @@ button:active{
 .blo02{
     background: #FFCB05;
     padding: 5px 10px 5px 10px;
+    flex: 1;
 }
 .blo03{
     display: flex;
@@ -107,12 +107,12 @@ button:active{
 .blo04{
     width: 100%;
     padding: 5px 10px 5px 10px;
-    margin-left: 100px;
 
     display: flex;
     gap: 10px;
     flex: 1;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .blo05{
     padding: 5px 10px 5px 10px;
@@ -150,7 +150,6 @@ button:active{
     gap: 100px;
 }
 .blo12{
-    margin-left: 100px;
     height: 430px;
     display: flex;
     justify-content: center;
@@ -167,13 +166,16 @@ button:active{
     border-radius: 20px;
     gap: 10px;
 }
+.blo15{
+    width: 100%;
+    display: flex;
+}
 .logo{
     height: 171px;
     width: 356px;
 }
 .icon01{
     width: 25px;
-    height: 24;
 }
 .icon02{
     width: 79px;
@@ -255,9 +257,11 @@ button:active{
     }
 }
 @media screen and (max-width: 480px) {
+    body{
+        width: fit-content;
+    }
     .blo03{
-        width: auto;
-        flex: 1 1 70%;
+        flex-direction: column;
     }
     .blo08{
         width: auto;
