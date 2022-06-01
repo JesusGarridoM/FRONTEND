@@ -14,12 +14,12 @@ Visita la pagina [Aqui](https://gray-bush-0139fb80f.1.azurestaticapps.net)
 ### SEMANA-04
 Visita la pagina [Aqui](https://black-bay-0a571450f.1.azurestaticapps.net/)
 <div>
-  <img alt="Pokedex" src="./SEMANA-04/assets/visual/desktop.png" width="300px" />
+  <img alt="Pokedex" src="./SEMANA-04/assets/visual/pokedex.gif" width="300" />
 </div>
 
 ### SEMANA-05
 Visita la pagina [Aqui](https://agreeable-sky-046b3440f.1.azurestaticapps.net/)
 <div>
-  <img alt="Pagina de inicio de cliente" src="./SEMANA-05/pasteleria/src/assets/visual/escritorio/homeCliente01.png" width="300px" />
+  <img alt="Pagina de inicio de cliente" src="./SEMANA-05/pasteleria/src/assets/visual/escritorio/pasteleria.gif" width="300" />
 </div>
   
